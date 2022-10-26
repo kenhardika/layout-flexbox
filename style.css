@@ -3,43 +3,33 @@
     box-sizing: border-box;
 }
 
-header{
+body{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    width: 100%;
-    padding: 10px;
+    gap: 10px;
 }
 
-.layer-header{
+header{
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: space-between;
     width: 80%;
-    border: 1px solid black;
-    padding: 5px;
+    padding: 10px;
+    border: 2px solid black;
 }
 
 main{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 10px;
-}
-
-.layer-content{
-    display: flex;
-    flex-direction: row;
     width: 80%;
-    gap: 5px;
-    height: 100px;
+    height: 150px;
+    gap: 10px;
 }
 
 aside{
     width: 30%;
-    border: 1px solid black;
+    border: 2px solid black;
     padding: 10px;
 }
 
@@ -47,33 +37,21 @@ article{
     display: flex;
     flex-direction: row;
     width: 70%;
-
+    border: 2px solid black;
 }
 
-.articleRow{
+section{
     display: flex;
     flex-direction: column;
     width: 50%;
 }
 
-.article-one,.article-two{
-    display: flex;
-    align-items: center;
+section div{
     padding: 10px;
-}
-
-.article-one{
     height: 50%;
     border: 1px solid black;
 }
 
-.article-two{
-    height: 50%;
-    border: 1px solid black;
-}
-
-.article-three{
-    width: 50%;
-    border: 1px solid black;
+section:last-child{
     padding: 10px;
 }
